@@ -10,14 +10,19 @@
     <title>html-css-boolando</title>
   </head>
   <body>
+    
     <!-- Index -->
+    <!-- cg-15 => column-gap: 15px-->
     <!-- jc-flex-end => justify-content: flex-end; -->
     <!-- vp-90(vertical padding) => padding: 90px 0; -->
+    <!-- rg-40 =>  row-gap: 40px;-->
+    <!----------->
+
     <!--Header-->
     <header>  
       <div class="container">
         <div class="row">
-          <div class="col cg-5">
+          <div class="col cg-15">
             <a href="#">Donna</a>
             <a href="#">Uomo</a>
             <a href="#">Bambini</a>
@@ -25,7 +30,7 @@
           <div class="col jc-center">
             <img src="./img/boolean-logo.png" alt="Image not found">
           </div>
-          <div class="col jc-flex-end cg-5">
+          <div class="col jc-flex-end cg-15">
               <a href="#">
                 <i class="fa-regular fa-user"></i>
               </a>
@@ -41,13 +46,15 @@
     </header>
     <!--Main-->
     <main>
-      <div class="container vp-90">
-        <div class="row gap">
+      <div class="container vp-90 rg-40">
+        <div class="row gap-20">
           <div class="col">
             <div class="img image1">
               <div class="heart-label">&hearts;</div>
-              <div class="percentage-label">-50%</div>
-              <div class="sustainability-label">Sostenibilità</div>
+              <div class="bottom-labels-container">
+                <div class="percentage-label">-50%</div>
+                <div class="sustainability-label">Sostenibilità</div>
+              </div>
             </div>     
             <p class="brand">Levi's</p>
             <p class="title">RELAXED FIT TEE UNISEX</p>
@@ -59,7 +66,9 @@
           <div class="col">
             <div class="img image2">
               <div class="heart-label">&hearts;</div>
-              <div class="percentage-label">-30%</div>
+              <div class="bottom-labels-container">
+                <div class="percentage-label">-30%</div>
+              </div>
             </div>     
             <p class="brand">Guess</p>
             <p class="title">ROSES TEE</p>
@@ -71,7 +80,9 @@
           <div class="col">
             <div class="img image3">
               <div class="heart-label">&hearts;</div>
-              <div class="percentage-label">-30%</div>
+              <div class="bottom-labels-container">
+                <div class="percentage-label">-30%</div>
+              </div>
             </div>     
             <p class="brand">Come Zucchero Filato</p>
             <p class="title">VOGLIA DI COLORI PASTELLO</p>
@@ -81,36 +92,38 @@
             </div>
           </div>
         </div>
-        <div class="row gap">
+        <div class="row gap-20">
           <div class="col">
-            <div class="img image1">
+            <div class="img image4">
               <div class="heart-label">&hearts;</div>
-              <div class="percentage-label">-50%</div>
-              <div class="sustainability-label">Sostenibilità</div>
+              <div class="bottom-labels-container">
+                <div class="percentage-label">-50%</div>
+                <div class="sustainability-label">Sostenibilità</div>
+              </div>
             </div>     
             <p class="brand">Levi's</p>
-            <p class="title">RELAXED FIT TEE UNISEX</p>
+            <p class="title">TEE UNISEX</p>
             <div>
               <span class="discounted-price">14,99 &euro;</span>
               <span class="full-price">29,99 &euro;</i></span>
             </div>
           </div>
           <div class="col">
-            <div class="img image2">
+            <div class="img image5">
               <div class="heart-label">&hearts;</div>
-              <div class="percentage-label">-30%</div>
             </div>     
-            <p class="brand">Guess</p>
-            <p class="title">ROSES TEE</p>
+            <p class="brand">Maya Deluxe</p>
+            <p class="title">STRIPE BODICE</p>
             <div>
-              <span class="discounted-price">20,99 &euro;</span>
-              <span class="full-price">29,99 &euro;</i></span>
+              <span class="discounted-price">99,99 &euro;</span>
             </div>
           </div>
           <div class="col">
-            <div class="img image3">
+            <div class="img image6">
               <div class="heart-label">&hearts;</div>
-              <div class="percentage-label">-30%</div>
+              <div class="bottom-labels-container">
+                <div class="sustainability-label">Sostenibilità</div>
+              </div>
             </div>     
             <p class="brand">Come Zucchero Filato</p>
             <p class="title">VOGLIA DI COLORI PASTELLO</p>
