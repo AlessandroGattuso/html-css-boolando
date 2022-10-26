@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* Common css */
@@ -17,8 +18,7 @@ footer a{
   width: 70%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
 .row{
@@ -28,27 +28,47 @@ footer a{
   align-items: center;
 }
 
-.col{
-  width: (100%/3);
+main .col,
+header .col{
+  width: calc(100% / 3);
   display: flex;
-  column-gap: 20%;
 }
+
 /*<--------->*/
 /* Utils */
 .jc-flex-end{
   justify-content: flex-end;
 }
 
-.vp-p{
-  padding: 50px 0;
+.jc-center{
+  justify-content: center;
 }
+
+.cg-5{
+  column-gap: 5%;
+}
+
+.gap{
+  gap: 20px 10px;
+}
+
+.vp-90{
+  padding: 90px 0;
+}
+
 /*<--------->*/
 /* Header */
 header{
+  z-index: 2;
   width: 100%;
-  height: 50px;
   position: fixed;
+  height: 50px;
   background-color: rgb(255, 131, 23);
+}
+
+header .container{
+  align-items: center;
+  justify-content: center;
 }
 
 header a{
@@ -65,6 +85,99 @@ header img{
 }
 /*<--------->*/
 /* Main */
+
+main .col{
+  flex-direction: column;
+}
+
+main .img{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.heart-label{
+  position: absolute;
+  font-size: 20px;
+  padding: 8px 10px;
+  right: 0;
+  top: 10px;
+  background-color: white;
+}
+
+.percentage-label,
+.sustainability-label{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 10px;
+}
+
+.percentage-label{
+  background-color: red;
+  left: 0;
+}
+
+.sustainability-label{
+  left: 60px;
+  background-color: green;
+}
+
+.image1{
+  background-image: url('../img/1.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1:hover{
+  background-image: url('../img/1b.webp');;
+}
+
+.image2{
+  background-image: url('../img/2.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image2:hover{
+  background-image: url('../img/2b.webp');;
+}
+
+.image3{
+  background-image: url('../img/3.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand{
+  font-size: 13px;
+  color: rgba(0,0,0,0.5);
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 800;
+  color: black
+}
+
+.discounted-price,
+.full-price{
+  font-size: 13px;
+}
+
+.discounted-price{
+  color: red;
+  font-weight: 600;
+}
+
+.full-price{
+  color: grey;
+  text-decoration: line-through;
+}
 
 /*<--------->*/
 /* Footer*/
