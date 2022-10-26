@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Common css */
+header,
+footer,
+header a,
+footer a{
+  color: white;
+}
+
+.container{
+  height: inherit;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col{
+  width: (100%/3);
+  display: flex;
+  column-gap: 20%;
+}
+/*<--------->*/
+/* Utils */
+.jc-flex-end{
+  justify-content: flex-end;
+}
+
+.vp-p{
+  padding: 50px 0;
+}
+/*<--------->*/
+/* Header */
+header{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: rgb(255, 131, 23);
+}
+
+header a{
+  font-size: 14px;
+  text-decoration: none;
+}
+
+header a:hover{
+  text-decoration: underline;
+}
+
+header img{
+  width: 100px;
+}
+/*<--------->*/
+/* Main */
+
+/*<--------->*/
+/* Footer*/
+
+/*<--------->*/
