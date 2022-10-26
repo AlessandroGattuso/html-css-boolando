@@ -24,7 +24,6 @@ footer a{
 .row{
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -60,6 +59,9 @@ header .col{
   padding: 90px 0;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
 /*<--------->*/
 /* Header */
 header{
@@ -208,5 +210,49 @@ main .img{
 
 /*<--------->*/
 /* Footer*/
+footer{
+  color: rgb(234, 234, 234);
+  height: 100px;
+  background-color: rgb(26,26,26);
+}
 
+footer .row{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+footer .col{
+  width: 100%;
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.bottom-bar h2{
+  font-size: 15px;
+}
+
+.bottom-bar p{
+  font-size: 11px;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.social h2{
+  font-size: 12px;
+}
 /*<--------->*/
