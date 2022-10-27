@@ -97,14 +97,6 @@ main .col{
   flex-direction: column;
 }
 
-main .img{
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .heart-label{
   position: absolute;
   font-size: 20px;
@@ -137,6 +129,14 @@ main .img{
 
 .sustainability-label{
   background-color: green;
+}
+
+.img{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image1{
