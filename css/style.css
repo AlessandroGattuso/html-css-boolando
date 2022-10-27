@@ -55,10 +55,6 @@ header .col{
   gap: 20px;
 }
 
-.vp-90{
-  padding: 90px 0;
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -68,6 +64,8 @@ header{
   z-index: 2;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   height: 50px;
   background-color: rgb(255, 131, 23);
 }
@@ -91,6 +89,9 @@ header img{
 }
 /*<--------->*/
 /* Main */
+main{
+  margin: 90px 0px;
+}
 
 main .col{
   flex-direction: column;
