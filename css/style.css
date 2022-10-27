@@ -216,8 +216,11 @@ footer{
   background-color: rgb(26,26,26);
 }
 
+footer .container{
+  flex-direction: row;
+}
+
 footer .row{
-  height: inherit;
   display: flex;
   align-items: center;
 }
@@ -225,16 +228,20 @@ footer .row{
 footer .col{
   width: 100%;
   display: flex;
-  height: inherit;
   justify-content: space-between;
   align-items: center;
 }
 
-.bottom-bar{
+.bottom-bar,
+.social{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.bottom-bar{
+  font-size: 11px;
   row-gap: 10px;
 }
 
@@ -242,13 +249,7 @@ footer .col{
   font-size: 15px;
 }
 
-.bottom-bar p{
-  font-size: 11px;
-}
-
 .social{
-  display: flex;
-  flex-direction: column;
   row-gap: 5px;
 }
 
